@@ -139,7 +139,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
    │   CTRL  │    Z    │    X    │    C    │    D    │    V    ││  MUTE  ││PLY/PSE ││    K    │    H    │    ,    │    .    │    /    │  ENTER  │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │ ENT/NUM │BSPC/NAV │ DEL/SYM │ SFT/CW  ││ REPEAT  │   SYM   │ SPC/NAV │   NUM   │  
+                                 │ ENT/NUM │BSPC/ADJ │ DEL/SYM │ SFT/CW  ││ REPEAT  │   SYM   │ SPC/NUM │ ADJUST  │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ 
   - One shot Shift
   - Double tap Shift for Caps Word
@@ -149,7 +149,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [_COLEMAK] = LAYOUT_polydactyl(
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
               KC_Q,     KC_W,     KC_F,     KC_P,     KC_B,                          KC_J,     KC_L,     KC_U,     KC_Y,     KC_QUOT,  
-    KC_TAB,   KC_A,     KC_R,     KC_S,     SFT_T,    KC_G,                          KC_M,     SFT_N,    KC_E,     KC_I,     KC_O,     KC_MINS,
+    KC_TAB,   KC_A,     KC_R,     KC_S,     KC_T,     KC_G,                          KC_M,     KC_N,     KC_E,     KC_I,     KC_O,     KC_MINS,
     KC_LCTL,  KC_Z,     KC_X,     KC_C,     KC_D,     KC_V,     KC_MUTE,   KC_MPLY,  KC_K,     KC_H,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_ENT,
     LT(_NUM,KC_ENT), LT(_ADJUST,KC_BSPC), LT(_SYM,KC_DEL), OSM(MOD_LSFT),  QK_REP,   OSL(_SYM), LT(_NUM,KC_SPC), MO(_ADJUST)
  ),
